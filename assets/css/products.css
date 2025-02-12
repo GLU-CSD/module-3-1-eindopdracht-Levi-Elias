@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+.navbar {
+    background-color: #333;
+    padding: 15px;
+}
+
+.navbar a {
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 15px;
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+.hero {
+    background-color: #222;
+    color: white;
+    padding: 29px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.hero p {
+    font-size: 141%;
+    margin: 20px;
+}
+
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+    width: 100%;
+    margin-top: 30px;
+}
+
+/* Grid layout voor producten */
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 20px;
+    padding: 30px;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.product img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 10px;
+}
