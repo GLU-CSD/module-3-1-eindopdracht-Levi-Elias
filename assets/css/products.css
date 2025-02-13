@@ -43,10 +43,11 @@ h2 {
     margin-top: 30px;
 }
 
-/* Grid layout voor producten */
+/* Grid layout for products */
 .products {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
+    /*grid-template-columns: repeat(auto-fit, minmax(15%, 1fr)); /* Responsive grid */
+    grid-template-columns: auto auto auto auto auto;
     gap: 20px;
     padding: 30px;
     justify-content: center;
@@ -70,5 +71,21 @@ h2 {
     height: auto;
     border-radius: 10px;
 }
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.copyright {
+    font-size: 12px;
+    color: #ccc;
+    margin-top: 10px;
+}
+
+
 
 
