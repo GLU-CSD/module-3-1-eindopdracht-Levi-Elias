@@ -45,8 +45,7 @@ h2 {
 
 /* Grid layout for products */
 .products {
-    display: grid;
-    /*grid-template-columns: repeat(auto-fit, minmax(15%, 1fr)); /* Responsive grid */
+    display: grid; /* Responsive grid */
     grid-template-columns: auto auto auto auto auto;
     gap: 20px;
     padding: 30px;
@@ -78,6 +77,11 @@ footer {
     padding: 10px;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
+    margin-top: auto; /* Push the footer to the bottom */
+}
+
+footer p {
+    margin: 0;
 }
 
 .copyright {
