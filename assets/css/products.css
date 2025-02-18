@@ -90,6 +90,30 @@ footer p {
     margin-top: 10px;
 }
 
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+    .navbar a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .hero {
+        padding: 20px;
+    }
+
+    .hero p {
+        font-size: 120%;
+    }
+
+    .products {
+        padding: 10px;
+    }
+
+    .product {
+        padding: 10px;
+    }
+}
+
 
 
 
