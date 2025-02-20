@@ -12,23 +12,7 @@ document.getElementById('filter-form').addEventListener('submit', function (e) {
     const productCategory = product.getAttribute('data-category');
     const productShoeType = product.getAttribute('data-shoe-type');
 
-    let priceMatch = false;
-    if (priceRange === 'all') {
-      priceMatch = true;
-    } else if (priceRange === '0-100' && productPrice <= 100) {
-      priceMatch = true;
-    } else if (priceRange === '101-200' && productPrice > 100 && productPrice <= 200) {
-      priceMatch = true;
-    } else if (priceRange === '201-300' && productPrice > 200 && productPrice <= 300) {
-      priceMatch = true;
-    } else if (priceRange === '301-400' && productPrice > 300 && productPrice <= 400) {
-      priceMatch = true;
-    } else if (priceRange === '401-500' && productPrice > 400 && productPrice <= 500) {
-      priceMatch = true;
-    } else if (priceRange === '501+' && productPrice > 500) {
-      priceMatch = true;
-    }
-
+    const priceMatch = productPrice <= priceRange;
     const categoryMatch = category === 'all' || category === productCategory;
     const shoeTypeMatch = shoeType === 'all' || shoeType === productShoeType;
 

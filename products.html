@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Fresh Kicks</title>
+  <title>Producten</title>
   <link rel="stylesheet" href="assets/css/products.css">
   <meta name="description" content="">
 
@@ -37,15 +37,8 @@
     <h2>Filter Products</h2>
     <form id="filter-form">
       <label for="price-range">Price Range:</label>
-      <select id="price-range" name="price-range">
-        <option value="all">All</option>
-        <option value="0-100">€0 - €100</option>
-        <option value="101-200">€101 - €200</option>
-        <option value="201-300">€201 - €300</option>
-        <option value="301-400">€301 - €400</option>
-        <option value="401-500">€401 - €500</option>
-        <option value="501+">€501+</option>
-      </select>
+      <input type="range" id="price-range" name="price-range" min="0" max="1000" step="10" value="1000" oninput="updatePriceRange(this.value)">
+      <span id="price-range-value">€0 - €1000</span>
 
       <label for="category">Category:</label>
       <select id="category" name="category">
@@ -273,10 +266,15 @@
   </div>
 
   <script src="assets/js/filter.js"></script>
+  <script>
+    function updatePriceRange(value) {
+      document.getElementById('price-range-value').textContent = `€0 - €${value}`;
+    }
+  </script>
 </body>
 
 <footer>
-    <p class="copyright">(c) HTML5 Boilerplate</p>
+  <p>&copy; 2025 Fresh Kicks. All rights reserved.</p>
 </footer>
 
 </html>
