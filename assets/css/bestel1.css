@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.top-bar {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.top-bar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.container {
+    padding: 20px;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.subtitle {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.name {
+    font-weight: bold;
+}
+
+.inputsCell {
+    padding: 5px;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.submitBar {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer {
+    background-color: #f1f1f1;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .left,.footer .right {
+    width: 45%;
+}
+
+.footer .title {
+    font-weight: bold;
+}
+
+.footer .description,.footer .item {
+    margin: 5px 0;
+}
+
+.paymentMethods {
+    text-align: center;
+    padding: 20px;
+}
+
+.paymentMethods img {
+    margin: 0 10px;
+    height: 40px;
+}
