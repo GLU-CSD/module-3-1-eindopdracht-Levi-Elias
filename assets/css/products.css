@@ -5,7 +5,7 @@ body {
     margin: 0;
     background-color: #f5f5f5;
     text-align: center;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Arial, sans-serif;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -13,27 +13,81 @@ body {
 }
 
 .navbar {
+    display: flex;
+    justify-content: space-between;
     background-color: #333;
-    padding: 15px;
+    padding: 1rem;
 }
 
 .navbar a {
     color: white;
-
-    margin: 15px;
-    font-size: 18px;
-    text-decoration: underline;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
 }
 
 .hero {
     background-color: #222;
     color: white;
-    padding: 29px;
+    text-align: center;
+    padding: 2rem;
 }
 
 .hero p {
     font-size: 141%;
     margin: 20px;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #6e6a6a;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar.active {
+    width: 250px;
+}
+
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #575757;
+    width: 20%;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+}
+
+.sidebar h2 {
+    color: white;
+    padding-left: 15px;
+}
+
+.sidebar form {
+    padding: 15px;
+}
+
+.sidebar label, .sidebar select, .sidebar input {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
 }
 
 h2 {
@@ -50,6 +104,8 @@ h2 {
     max-width: 1200px;
     margin: 0 auto;
     flex: 1;
+    margin-left: 260px;
+    padding: 1rem;
 }
 
 .product {
@@ -60,7 +116,6 @@ h2 {
     text-align: center;
     width: 240px;
     height: 355px;
-
 }
 
 .product img {
@@ -79,7 +134,6 @@ footer {
     color: white;
     padding: 10px;
     text-align: center;
-
     margin-top: auto;
 }
 
@@ -93,10 +147,13 @@ footer p {
     font-weight: bold;
 }
 
-.copyright {
-    font-size: 12px;
-    color: #ccc;
-    margin-top: 10px;
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    padding: 10px 15px;
+    border: none;
 }
 
 @media (max-width: 600px) {
@@ -122,5 +179,23 @@ footer p {
     }
 }
 
+@media screen and (max-width: 768px) {
+    .products {
+        margin-left: 0;
+    }
 
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .sidebar.active {
+        width: 100%;
+    }
+
+    .openbtn {
+        display: block;
+    }
+}
 

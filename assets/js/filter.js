@@ -1,3 +1,11 @@
+function updatePriceRange(value) {
+  document.getElementById('price-range-value').textContent = `€0 - €${value}`;
+}
+
+function toggleSidebar() {
+  const sidebar = document.querySelector('.sidebar');
+  sidebar.classList.toggle('active');
+}
 document.getElementById('filter-form').addEventListener('submit', function (e) {
   e.preventDefault();
 
