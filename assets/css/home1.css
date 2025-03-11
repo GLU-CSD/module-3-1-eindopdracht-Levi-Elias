@@ -6,9 +6,14 @@ body {
   text-align: center;
 }
 .navbar {
+  display: flex;
   background-color: #333;
   padding: 15px;
+  justify-content: center;
+  align-items: center;
 }
+ 
+
 .navbar a {
   color: white;
   font-family: 'Times New Roman', Times, serif;
@@ -16,6 +21,20 @@ body {
   font-size: 18px;
   text-decoration: underline;
 }
+
+.navbar .cart img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.navbar .logo img {
+  display: flex;
+  width: 150px;
+  height: 100px;
+  margin-right: 10px;
+}
+
 .hero {
   background-color: #222;
   color: white;
@@ -62,6 +81,18 @@ h2 {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+
+footer {
+  background-color: #333;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+footer p {
+  margin: 0;
+  color: white;
 }
 
 @media (max-width: 600px) {
