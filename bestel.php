@@ -1,12 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/bestel1.css">
-    <title>Information And Payment</title>
-</head>
+<?php
+ include("includes/header.php");
+?>
 
 <body>
     <!-- Blue top bar -->
@@ -153,7 +147,7 @@
     </div>
 
     <!-- Footer -->
-    <div class="footer">
+    <div class="info">
         <div class="left">
             <div class="phoneNumberContainer">
                 <span class="icon"><i class="fa-solid fa-phone"></i></span>

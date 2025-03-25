@@ -1,24 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+ include("includes/header.php");
+?>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart</title>
-    <link rel="stylesheet" href="assets/css/cart2.css">
-</head>
+<?php
+  include("includes/nav.php");
+?>
 
 <body>
-    <div class="navbar">
-        <a href="index.html">Home</a>
-        <a href="products.html">Products</a>
-        <a href="contact.html">Contact</a>
-        <a class="cart" href="cart.html"><img src="assets/img/icons/image.png"></a>
-    </div>
-    <div class="hero">
-        <h1>Fresh Kicks</h1>
-        <p>The Best Sneaker Collection</p>
-    </div>
     <h2>Cart</h2>
     <div class="cart">
         <div class="product">
@@ -42,16 +30,13 @@
 
         <div class="placeOrder">
             <h3>Total: €1420</h3>
-            <a href="bestel.html"><button>Place Order</button></a>
+            <a href="bestel.php"><button>Place Order</button></a>
         </div>
     </div>
-    
-    <footer>
-        <p>&copy; 2025 Fresh Kicks. All rights reserved.</p>
-    </footer>
-
-
-    <script src="assets/js/app.js"></script>
 </body>
+
+<?php
+ include("includes/footer.php");
+?>
 
 </html>

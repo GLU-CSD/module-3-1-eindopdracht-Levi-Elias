@@ -1,39 +1,12 @@
-<!doctype html>
-<html class="no-js" lang="en">
+<?php
+ include("includes/header.php");
+?>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Producten</title>
-  <link rel="stylesheet" href="assets/css/products1.css">
-  <meta name="description" content="">
-
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
-  <meta property="og:image:alt" content="">
-
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" href="/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="icon.png">
-
-  <meta name="theme-color" content="#fafafa">
-</head>
+<?php
+ include("includes/nav.php");
+?>
 
 <body>
-  <div class="navbar">
-    <a class="logo"><img src="assets/img/icons/logo.png"></a>
-    <a href="index.html">Home</a>
-    <a href="products.html">Products</a>
-    <a href="contact.html">Contact</a>
-    <a href="cart.html"><img src="assets/img/icons/image.png" alt=""></a>
-  </div>
-
-  <div class="hero">
-    <h1>Fresh Kicks</h1>
-    <p>The Best Sneaker Collection</p>
-  </div>
 
   <button class="openbtn" onclick="toggleSidebar()">☰ Filters</button>
 
@@ -271,11 +244,11 @@
     </div>
   </div>
 
-  <script src="assets/js/filter1.js"></script>
+  
 </body>
 
-<footer>
-  <p>&copy; 2025 Fresh Kicks. All rights reserved.</p>
-</footer>
+<?php
+ include("includes/footer.php");
+?>
 
 </html>
