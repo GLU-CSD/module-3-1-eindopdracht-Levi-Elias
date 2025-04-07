@@ -2,7 +2,11 @@
     <a href="index.php">Home</a>
     <a href="products.php">Products</a>
     <a href="contact.php">Contact</a>
-    <a class="cart" href="cart.php"><img src="assets/img/icons/image.png"></a>
+    <a class="cart-icon" href="cart.php"><img src="assets/img/icons/image.png"></a>
+</div>
+
+<div class="warning">
+    <p>⚠️ Waarschuwing: Dit is een demo site en is nog niet geprogrammeerd voor publiek gebruik.</p>
 </div>
 
 <div class="hero">

@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Fresh Kicks</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/style.css?v=<?php echo filemtime(filename: './assets/css/style.css') ?>">
   <meta name="description" content="">
 
   <meta property="og:title" content="">

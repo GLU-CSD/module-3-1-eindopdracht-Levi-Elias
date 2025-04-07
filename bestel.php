@@ -1,5 +1,5 @@
 <?php
- include("includes/header.php");
+include("includes/header.php");
 ?>
 
 <body>
@@ -10,7 +10,7 @@
 
     <!-- Main content -->
     <div class="container">
-        <form>
+        <form method="POST" action="bedankt.php">
             <table>
                 <tr>
                     <td colspan="2" class="title">JE GEGEVENS<span class="orange">.</span></td>
@@ -81,7 +81,7 @@
                 <tr>
                     <td class="name">E-mailadres</td>
                     <td class="inputsCell">
-                        <input type="email" name="email">
+                        <input type="email" name="email" placeholder="E-mailadres" required>
                     </td>
                 </tr>
                 <tr>
@@ -128,7 +128,7 @@
                 <tr>
                     <td class="name">Wachtwoord</td>
                     <td class="inputsCell">
-                        <input type="password" name="password">
+                        <input type="password" name="password" placeholder="Wachtwoord" required>
                         <p class="description">Minimaal 6 karakters.<br>Verder doen we niet zo moeilijk.</p>
                     </td>
                 </tr>
@@ -163,9 +163,12 @@
         <div class="right">
             <p class="title">SERVICE<span class="orange">.</span></p>
             <p class="description">Onderdeel van Fresh Kicks.</p>
-            <p class="item"><span class="check"><i class="fa-solid fa-check"></i></span> Gratis verzenden en retourneren</p>
-            <p class="item"><span class="check"><i class="fa-solid fa-check"></i></span> Voor 23.59 uur besteld, morgen in huis</p>
-            <p class="item"><span class="check"><i class="fa-solid fa-check"></i></span> Track & Trace, volg je pakket</p>
+            <p class="item"><span class="check"><i class="fa-solid fa-check"></i></span> Gratis verzenden en retourneren
+            </p>
+            <p class="item"><span class="check"><i class="fa-solid fa-check"></i></span> Voor 23.59 uur besteld, morgen
+                in huis</p>
+            <p class="item"><span class="check"><i class="fa-solid fa-check"></i></span> Track & Trace, volg je pakket
+            </p>
             <p class="item"><span class="check"><i class="fa-solid fa-check"></i></span> Statusupdates via e-mail</p>
             <p class="item"><span class="check"><i class="fa-solid fa-check"></i></span> Winkels in Amsterdam,
                 Eindhoven, Groningen, Rotterdam en Utrecht</p>
@@ -182,5 +185,9 @@
         <img src="./assets/img/postnl.png" alt="PostNL">
     </div>
 </body>
+
+<?php
+include("includes/footer.php");
+?>
 
 </html>
