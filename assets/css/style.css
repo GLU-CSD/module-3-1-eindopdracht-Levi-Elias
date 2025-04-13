@@ -31,8 +31,7 @@ h2 {
 .cart-icon img {
     width: 50px;
     height: 50px;
-    margin-right: 10px;
-
+    cursor: pointer;
 }
 
 .warning {
@@ -427,6 +426,28 @@ h2 {
 
 .thank-you-footer .button:hover {
     background-color: #0056b3;
+}
+
+
+.order-details {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.order-details h2 {
+    color: #444;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+.order-details ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.order-details ul li {
+    margin: 5px 0;
+    color: #555;
 }
 
 /* Contact formulier */

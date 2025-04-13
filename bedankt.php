@@ -2,9 +2,14 @@
 include("includes/header.php");
 ?>
 
+<?php
+session_start();
+?>
+
 <div class="hero">
    <img src="assets/img/icons/logo.png" alt="Logo">
 </div>
+
 
 <body>
     <div class="thank-you-container">
@@ -19,6 +24,21 @@ include("includes/header.php");
                 <li><strong>Telefoonnummer:</strong> <?php echo htmlspecialchars($_POST['phone'] ?? ''); ?></li>
                 <li><strong>Postcode:</strong> <?php echo htmlspecialchars($_POST['postcode'] ?? ''); ?></li>
                 <li><strong>Huisnummer:</strong> <?php echo htmlspecialchars($_POST['housenumber'] ?? ''); ?> <?php echo htmlspecialchars($_POST['housenumberadd'] ?? ''); ?></li>
+            </ul>
+        </div>
+
+        <div class="order-details">
+            <h2>Bestelde producten:</h2>
+            <ul>
+                <?php
+                if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {
+                    foreach ($_SESSION['cart'] as $productId => $product) {
+                        echo '<li>' . htmlspecialchars($product['name']) . ' - €' . htmlspecialchars($product['price']) . ' x ' . htmlspecialchars($product['quantity']) . '</li>';
+                    }
+                } else {
+                    echo '<li>Geen producten in de winkelwagen.</li>';
+                }
+                ?>
             </ul>
         </div>
 

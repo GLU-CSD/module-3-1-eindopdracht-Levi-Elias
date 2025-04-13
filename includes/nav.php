@@ -2,7 +2,10 @@
     <a href="index.php">Home</a>
     <a href="products.php">Products</a>
     <a href="contact.php">Contact</a>
-    <a class="cart-icon" href="cart.php"><img src="assets/img/icons/image.png"></a>
+    <a class="cart-icon" href="cart.php">
+        <img src="assets/img/icons/image.png" alt="Cart Icon">
+        
+    </a>
 </div>
 
 <div class="warning">
@@ -12,3 +15,7 @@
 <div class="hero">
    <img src="assets/img/icons/logo.png" alt="Logo">
 </div>
+
+
+
+
